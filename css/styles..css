@@ -13,6 +13,39 @@
   --team-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 body {
   background-color: var(--body-bg-color);
   color: #757575;
@@ -62,6 +95,30 @@ body {
   letter-spacing: 0.03em;
 }
 
+.logo-link {
+  margin-right: 93px;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: baseline;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: baseline;
+}
+
 .nav-item-link {
   color: var(--nav-link-color);
   font-weight: 500;
@@ -69,9 +126,25 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.nav-item:last-child {
+  margin-right: 0px;
+}
+
+.nav-item {
+  margin-right: 50px;
+}
 
 .linkcurrent {
   color: var(--accent-color);
+}
+
+.contacts-item {
+  margin-right: 50px;
+}
+
+.contacts-list {
+  margin-left: auto;
+  display: flex;
 }
 
 .contacts-item-link {
@@ -109,13 +182,14 @@ body {
 }
 
 .hero-button {
-  cursor: pointer;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--btn-text-color);
+  min-width: 200px;
+  height: 50px;
 }
 
 .hero-button:hover {

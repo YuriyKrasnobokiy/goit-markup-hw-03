@@ -37,6 +37,7 @@
   --filter-btn-background: #f5f4fa;
 
   --examples-list-item-border: #eeeeee;
+  --card-content-border: #eeeeee;
 }
 
 p,
@@ -497,7 +498,6 @@ body {
   flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid var(--examples-list-item-border);
 }
 
 .card-thumb {
@@ -524,4 +524,5 @@ body {
 
 .card-content {
   padding: 20px 24px;
+  border: 1px solid var(--card-content-border);
 }

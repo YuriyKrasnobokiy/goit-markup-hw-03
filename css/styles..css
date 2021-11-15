@@ -439,7 +439,7 @@ body {
 
 .portfolio {
   display: block;
-  padding: 94px 0;
+  /* padding: 94px 0; */
 }
 
 /* FILTER BTN */
@@ -448,25 +448,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* margin: 0 auto 50px; */
-  /* margin-bottom: 50px; */
   margin-right: -8px;
   margin-bottom: -8px;
   min-width: 611px;
 }
-/* .filter-item {
-  min-width: fit-content;
-} */
 
 .filter-item {
   display: inline-flex;
   margin-right: 8px;
   margin-bottom: 8px;
 }
-
-/* .filter-item:not(:last-child) {
-  margin-right: 8px;
-} */
 
 .filter-btn {
   cursor: pointer;
@@ -480,7 +471,7 @@ body {
   background: var(--filter-btn-background);
   padding: 6px 22px;
 
-  box-shadow: var(--btn-box-shadow);
+  /* box-shadow: var(--btn-box-shadow); */
   border-radius: var(--btn-border-radius);
 }
 
@@ -488,6 +479,7 @@ body {
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--accent-text-color);
+  box-shadow: var(--btn-box-shadow);
 }
 
 /* GALLERY */
@@ -512,7 +504,7 @@ body {
 }
 
 .examples-list-item {
-  box-shadow: var(--products-shadow);
+  /* box-shadow: var(--products-shadow); */
 }
 
 .examples-item-title {

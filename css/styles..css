@@ -447,16 +447,27 @@ body {
 
 .portfolio-filter {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto 50px;
+  /* margin: 0 auto 50px; */
+  /* margin-bottom: 50px; */
+  margin-right: -8px;
+  margin-bottom: -8px;
+  min-width: 611px;
 }
-.filter-item {
+/* .filter-item {
   min-width: fit-content;
+} */
+
+.filter-item {
+  display: inline-flex;
+  margin-right: 8px;
+  margin-bottom: 8px;
 }
 
-.filter-item:not(:last-child) {
+/* .filter-item:not(:last-child) {
   margin-right: 8px;
-}
+} */
 
 .filter-btn {
   cursor: pointer;
@@ -486,7 +497,7 @@ body {
   display: flex;
 
   flex-wrap: wrap;
-
+  margin-top: 50px;
   margin-right: -30px;
   margin-bottom: -30px;
 }

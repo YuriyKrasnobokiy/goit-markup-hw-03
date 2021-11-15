@@ -266,6 +266,7 @@ body {
 
 .our-work {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .our-work-title {
@@ -280,17 +281,18 @@ body {
 
 .our-work-list {
   display: flex;
-  max-width: 1170px;
-  justify-content: center;
-  margin: 0 auto;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
-.our-work-item:first-child {
-  margin-left: 0px;
-}
 .our-work-item {
-  margin-left: 30px;
-  align-items: center;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.our-work-item:not(:last-child) {
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 /* TEAM */
@@ -328,8 +330,8 @@ body {
 
   width: 270px;
   height: 368px;
-  left: 1115px;
-  top: 1635px;
+  /* left: 1115px;
+  top: 1635px; */
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),

@@ -314,15 +314,22 @@ body {
 }
 
 .team-list {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
-.team-item:last-child {
-  margin-right: 0;
-}
-.team-item {
+
+.team-item:not(:last-child) {
   margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.team-item {
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 .team-card {

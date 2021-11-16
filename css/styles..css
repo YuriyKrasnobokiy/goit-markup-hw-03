@@ -11,6 +11,8 @@
 
   --hero-text-color: #ffffff;
   --hero-bg-color: #2f303a;
+  --hero-button-color: #ffffff;
+  --hero-button-bg-color: #2196f3;
 
   --nav-link-color: #212121;
   --contact-link-color: #757575;
@@ -155,7 +157,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  height: 100%;
+  /* height: 100%; */
 
   padding-top: 32px;
   padding-bottom: 32px;
@@ -208,8 +210,8 @@ body {
 .hero {
   background-color: var(--hero-bg-color);
   padding: 0;
-  padding-top: 280px;
-  padding-bottom: 280px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-text {
@@ -230,21 +232,22 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--btn-text-color);
+  color: var(--hero-button-color);
   min-width: 200px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  background-color: var(--hero-button-bg-color);
   border-radius: var(--btn-border-radius);
   box-shadow: var(--hero-button-shadow);
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--accent-color);
-  color: var(--accent-text-color);
+  /* background-color: var(--accent-color);
+  color: var(--accent-text-color); */
 }
 
 /* features */
@@ -360,7 +363,7 @@ body {
 }
 
 .card-text {
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
@@ -368,11 +371,13 @@ body {
 }
 
 .team-item-title {
+  font-size: 16px;
   font-weight: 500;
   color: var(--title-text-color);
 }
 
 .team-item-desc {
+  font-size: 16px;
   margin-top: 10px;
 }
 
@@ -450,14 +455,14 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin-right: -8px;
-  margin-bottom: -8px;
+  /* margin-bottom: -8px; */
   min-width: 611px;
 }
 
 .filter-item {
   display: inline-flex;
   margin-right: 8px;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
 .filter-btn {
@@ -503,8 +508,9 @@ body {
 .card-thumb {
 }
 
-.examples-list-item {
-  /* box-shadow: var(--products-shadow); */
+.card-content {
+  padding: 20px 24px;
+  border: 1px solid var(--card-content-border);
 }
 
 .examples-item-title {
@@ -520,9 +526,4 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-}
-
-.card-content {
-  padding: 20px 24px;
-  border: 1px solid var(--card-content-border);
 }
